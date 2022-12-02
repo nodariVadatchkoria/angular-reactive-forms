@@ -1,0 +1,101 @@
+.head-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 80% auto auto;
+
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.mainForm {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
+  .name{
+    display:grid;
+    grid-template-columns: auto auto 85px;
+    width: 400px;
+    height: 30px;
+    input{
+      width: 180px;
+    }
+    .description{
+      width: 200px;
+      display: inline-grid;
+    }
+  }
+  .lastName{
+    display:grid;
+    grid-template-columns: auto auto 110px;
+
+    width: 400px;
+    height: 30px;
+    input{
+      width: 180px;
+    }
+  }
+  .email{
+
+    display:grid;
+    grid-template-columns: auto auto 85px;
+
+    width: 400px;
+    height: 30px;
+    input{
+      width: 180px;
+    }
+  }
+  .phone{
+    display:grid;
+    grid-template-columns: auto auto 88px;
+    width: 400px;
+    height: 30px;
+    input{
+      width: 180px;
+    }
+  }
+  .link{
+    width: 400px;
+  }
+}
+  input {
+    border-radius: 4px;
+    margin: 1px;
+    .experience{
+      color: black;
+    }
+    &.ng-invalid.ng-touched{
+      border: 1px solid red;
+      color: red;
+    }
+  }
+
+.description {
+  margin-bottom: 10px;
+}
+textarea{
+  width: 481px;
+  height: 100px;
+  display: inline-grid;
+}
+
+.validationMessage{
+  color: red;
+  font-size: 12px;
+  margin: 3px;
+  //box-shadow: 5px 5px 10px grey;
+  width: 400px;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+
